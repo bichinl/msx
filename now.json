@@ -7,9 +7,15 @@
       "use": "@now/node-server"
     }
   ],
+  "files": ["./msx/**/*"],
   "routes": [
     {
       "src": "/",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/msx/(.*)",
       "dest": "/index.js",
       "methods": ["GET"]
     }
