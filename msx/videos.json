@@ -1,0 +1,39 @@
+{
+  "type": "pages",
+  "headline": "Peliculas",
+  "template": {
+    "tag": "Web",
+    "tagColor": "msx-red",
+    "type": "separate",
+    "layout": "0,0,2,4",
+    "icon": "msx-white-soft:movie",
+    "color": "msx-glass"
+  },
+  "items": [
+    {
+      "title": "Joker (2019)",
+      "playerLabel": "Joker (2019)",
+      "background": "http://www.appocalypse.co/wp-content/uploads/2019/08/Joker-Joaquin-Phoenix-Final-Poster.jpg",
+      "image": "https://www.joblo.com/assets/images/joblo/posters/2019/08/joker-poster-main3.jpg",
+      "action": "video:https://www117.hlsmp4.com/token=ZixVGqvLSp4TyOTO27STpw/1570784627/2806:102e::/52/1/f0/ab35118b1b0f9a6f22e40215e4670f01-360p.mp4"
+    },
+    {
+      "title": "Avengers 4: Endgame",
+      "playerLabel": "Avengers 4: Endgame",
+      "action": "video:https://stream74.uqload.com/3rfksczbfzw2q4drdlhphmfmle54alaikf4yygok2v63jjoedoz6tkayksua/v.mp4"
+    },
+    {
+      "title": "Toy Story 4",
+      "playerLabel": "Toy Story 4",
+      "background": "https://am24.akamaized.net/tms/cnt/uploads/2019/06/review-toy-story-4-a-worthy-and-tearjerking-addition-to-the-series.jpg",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81o8T-V0daL._SY445_.jpg",
+      "action": "video:https://hls4.openloadpremium.com/m3u8/OTgzNg.m3u8",
+      "tag": "HD",
+      "tagColor": "msx-blue",
+      "badge": "Item Badge",
+      "badgeColor": "msx-green",
+      "progress": -1,
+      "progressColor": "msx-yellow"
+    }
+  ]
+}

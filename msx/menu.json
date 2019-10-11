@@ -1,0 +1,34 @@
+{
+  "name": "Peliculas",
+  "version": "1.0.0",
+  "headline": "Peliculas",
+  "menu": [
+    {
+      "label": "Videos",
+      "data": "http://192.168.1.197:8080/msx/videos.json"
+    },
+    {
+      "label": "Youtube",
+      "data": "http://192.168.1.197:8080/msx/youtube.json"
+    },
+    {
+      "label": "Panel",
+      "data": {
+        "type": "pages",
+        "pages": [
+          {
+            "items": [
+              {
+                "type": "button",
+                "layout": "0,0,3,3",
+                "icon": "web-asset",
+                "label": "Panel",
+                "action": "panel:http://msx.benzac.de/info/data/guide/panel.json"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

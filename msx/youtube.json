@@ -1,0 +1,31 @@
+{
+  "type": "list",
+  "headline": "Plugin Examples",
+  "template": {
+    "type": "separate",
+    "layout": "0,0,2,4",
+    "icon": "msx-white-soft:extension",
+    "color": "msx-glass"
+  },
+  "items": [
+    {
+      "badge": "{txt:msx-white:YouTube}",
+      "badgeColor": "#ff0000",
+      "title": "Where is the love",
+      "playerLabel": "The Black Eyed Peas - Where is the love ft The World",
+      "action": "video:plugin:http://msx.benzac.de/plugins/youtube.html?id=YsRMoWYGLNA"
+    },
+    {
+      "badge": "{txt:msx-white:YouTube}",
+      "badgeColor": "#ff0000",
+      "title": "Marsha y El Oso",
+      "playerLabel": "De tal palo tal astilla",
+      "action": "video:plugin:http://msx.benzac.de/plugins/youtube.html?id=08qesIJAEGY"
+    },
+    {
+      "icon": "msx-white-soft:movie",
+      "label": "Start video playlist",
+      "action": "playlist:http://msx.benzac.de/services/m3u.php?type=video&url=http://msx.benzac.de/info/data/m3u/videos.m3u"
+    }
+  ]
+}
