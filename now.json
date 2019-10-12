@@ -7,7 +7,6 @@
       "use": "@now/node-server"
     }
   ],
-  "files": ["./msx/**/*"],
   "routes": [
     {
       "src": "/",
