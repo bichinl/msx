@@ -5,11 +5,11 @@
   "menu": [
     {
       "label": "Videos",
-      "data": "http://192.168.1.197:8080/msx/videos.json"
+      "data": "https://msx-dekss.herokuapp.com/msx/videos.json"
     },
     {
       "label": "Youtube",
-      "data": "http://192.168.1.197:8080/msx/youtube.json"
+      "data": "https://msx-dekss.herokuapp.com/msx/youtube.json"
     },
     {
       "label": "Panel",
