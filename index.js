@@ -4,6 +4,10 @@ var serveStatic = require("serve-static");
 
 var serve = serveStatic("./");
 
+// set the port of our application
+// process.env.PORT lets the port be set by Heroku
+var port = process.env.PORT || 8080;
+
 const server = http.createServer((req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Headers", "Origin, Content-Type, Accept");
@@ -14,4 +18,6 @@ const server = http.createServer((req, res) => {
   serve(req, res, done);
 });
 
-server.listen(8080);
+server.listen(port, function() {
+  console.log("Our app is running on http://localhost:" + port);
+});
