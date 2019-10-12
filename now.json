@@ -10,11 +10,5 @@
       "src": "msx/*/**",
       "use": "@now/static"
     }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/msx/$1"
-    }
   ]
 }
