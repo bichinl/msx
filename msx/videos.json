@@ -50,6 +50,14 @@
       "action": "video:https://cdn3.openloadpremium.com/drive//hls/f84f078ccdab2d38f656ed19bdc2d8f3/f84f078ccdab2d38f656ed19bdc2d8f3.m3u8",
       "tag": "HD",
       "tagColor": "msx-blue"
+    },
+    {
+      "title": "John Wick 3: Parabellum",
+      "playerLabel": "John Wick 3: Parabellum",
+      "image": "https://image.tmdb.org/t/p/w185_and_h278_bestv2/38d32uG1x7iiN2jdK0cRX0Bk423.jpg",
+      "action": "video:https://hls4.openloadpremium.com/m3u8/OTg2MA.m3u8",
+      "tag": "HD",
+      "tagColor": "msx-blue"
     }
   ]
 }
