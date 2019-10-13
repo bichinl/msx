@@ -18,9 +18,13 @@
       "action": "video:https://www117.hlsmp4.com/token=ZixVGqvLSp4TyOTO27STpw/1570784627/2806:102e::/52/1/f0/ab35118b1b0f9a6f22e40215e4670f01-360p.mp4"
     },
     {
-      "title": "Avengers 4: Endgame",
-      "playerLabel": "Avengers 4: Endgame",
-      "action": "video:https://stream74.uqload.com/3rfksczbfzw2q4drdlhphmfmle54alaikf4yygok2v63jjoedoz6tkayksua/v.mp4"
+      "title": "El Rey Leon (2019)",
+      "playerLabel": "El Rey Leon (2019)",
+      "action": "video:https://storage.googleapis.com/aqueous-flight-253909.appspot.com/tt6105098_LAT_HD.mp4",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjIwMjE1Nzc4NV5BMl5BanBnXkFtZTgwNDg4OTA1NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "background": "https://m.media-amazon.com/images/M/MV5BZGU4NDM4NmEtMDM5Ni00NGIyLTllNjItMGM5MjgwNTUzMjYzXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_SX1777_CR0,0,1777,937_AL_.jpg",
+      "tag": "HD",
+      "tagColor": "msx-blue"
     },
     {
       "title": "Toy Story 4",
@@ -30,10 +34,7 @@
       "action": "video:https://hls4.openloadpremium.com/m3u8/OTgzNg.m3u8",
       "tag": "HD",
       "tagColor": "msx-blue",
-      "badge": "Item Badge",
-      "badgeColor": "msx-green",
-      "progress": -1,
-      "progressColor": "msx-yellow"
+      "badge": "Item Badge"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "name": "Fucking Start Parameter Name",
+  "name": "Start Parameter Name",
   "version": "1.0.0",
   "parameter": "menu:https://msx-dekss.herokuapp.com/msx/menu.json"
 }
