@@ -34,6 +34,14 @@
       "action": "video:https://hls4.openloadpremium.com/m3u8/OTgzNg.m3u8",
       "tag": "HD",
       "tagColor": "msx-blue"
+    },
+    {
+      "title": "Spider-Man: Lejos de Casa",
+      "playerLabel": "Spider-Man: Lejos de Casa",
+      "image": "https://image.tmdb.org/t/p/w185_and_h278_bestv2/i6Cxqy7d5DXc52ZgHvkHBeZVsqW.jpg",
+      "action": "video:https://hls4.openloadpremium.com/m3u8/OTMwMA.m3u8",
+      "tag": "HD",
+      "tagColor": "msx-blue"
     }
   ]
 }
