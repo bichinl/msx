@@ -42,6 +42,14 @@
       "action": "video:https://hls4.openloadpremium.com/m3u8/OTMwMA.m3u8",
       "tag": "HD",
       "tagColor": "msx-blue"
+    },
+    {
+      "title": "Capitana Marvel",
+      "playerLabel": "Capitana Marvel",
+      "image": "https://image.tmdb.org/t/p/w185_and_h278_bestv2/d3p5JuwN7dG0TvrN5h4ZY4tMOEX.jpg",
+      "action": "video:https://cdn3.openloadpremium.com/drive//hls/f84f078ccdab2d38f656ed19bdc2d8f3/f84f078ccdab2d38f656ed19bdc2d8f3.m3u8",
+      "tag": "HD",
+      "tagColor": "msx-blue"
     }
   ]
 }
