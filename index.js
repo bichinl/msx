@@ -31,7 +31,7 @@ app.post("/videos", async (req, res, next) => {
   try {
     const item = req.body;
 
-    let rawdata = await fs.readFileSync("msx/videos-clone.json");
+    let rawdata = await fs.readFileSync("msx/videos.json");
     let data = await JSON.parse(rawdata);
 
     const isUpdate = data.items.some(i => i.uid === item.uid);
@@ -55,16 +55,44 @@ app.post("/videos", async (req, res, next) => {
       };
     }
 
-    let newData = JSON.stringify(n, undefined, 2);
-    fs.writeFileSync("msx/videos-clone.json", newData);
+    const newData = JSON.stringify(n, undefined, 2);
+    fs.writeFileSync("msx/videos.json", newData);
 
-    res.status(200).send("JSON updated!");
+    res.status(200).json({ message: "JSON updated!" });
   } catch (e) {
     //this will eventually be handled by your error handling middleware
+    res.status(400).json({ message: e.message });
     next(e);
   }
 });
 
+app.get("/videos/delete/:uid", async (req, res, next) => {
+  try {
+    const uid = req.params.uid;
+
+    let rawdata = await fs.readFileSync("msx/videos.json");
+    let data = await JSON.parse(rawdata);
+
+    const exists = data.items.some(i => i.uid === uid);
+
+    if (exists) {
+      const n = {
+        ...data,
+        items: data.items.filter(item => {
+          if (item.uid !== uid) return item;
+        })
+      };
+      const newData = JSON.stringify(n, undefined, 2);
+      fs.writeFileSync("msx/videos.json", newData);
+    }
+
+    res.status(200).json({ message: "JSON updated, item was deleted!" });
+  } catch (e) {
+    //this will eventually be handled by your error handling middleware
+    res.status(400).json({ message: e.message });
+    next(e);
+  }
+});
 
 app.listen(port, function() {
   console.log("Our app is running on http://localhost:" + port);

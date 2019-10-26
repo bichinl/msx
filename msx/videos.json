@@ -11,13 +11,17 @@
   },
   "items": [
     {
+      "uid": "1",
       "title": "Joker (2019)",
       "playerLabel": "Joker (2019)",
       "background": "http://www.appocalypse.co/wp-content/uploads/2019/08/Joker-Joaquin-Phoenix-Final-Poster.jpg",
       "image": "https://www.joblo.com/assets/images/joblo/posters/2019/08/joker-poster-main3.jpg",
-      "action": "video:https://www117.hlsmp4.com/token=ZixVGqvLSp4TyOTO27STpw/1570784627/2806:102e::/52/1/f0/ab35118b1b0f9a6f22e40215e4670f01-360p.mp4"
+      "action": "video:https://www117.hlsmp4.com/token=ZixVGqvLSp4TyOTO27STpw/1570784627/2806:102e::/52/1/f0/ab35118b1b0f9a6f22e40215e4670f01-360p.mp4",
+      "tag": "Web",
+      "tagColor": "msx-red"
     },
     {
+      "uid": "2",
       "title": "El Rey Leon (2019)",
       "playerLabel": "El Rey Leon (2019)",
       "action": "video:https://storage.googleapis.com/aqueous-flight-253909.appspot.com/tt6105098_LAT_HD.mp4",
@@ -27,6 +31,7 @@
       "tagColor": "msx-blue"
     },
     {
+      "uid": "3",
       "title": "Toy Story 4",
       "playerLabel": "Toy Story 4",
       "background": "https://am24.akamaized.net/tms/cnt/uploads/2019/06/review-toy-story-4-a-worthy-and-tearjerking-addition-to-the-series.jpg",
@@ -36,6 +41,7 @@
       "tagColor": "msx-blue"
     },
     {
+      "uid": "4",
       "title": "Spider-Man: Lejos de Casa",
       "playerLabel": "Spider-Man: Lejos de Casa",
       "image": "https://image.tmdb.org/t/p/w185_and_h278_bestv2/i6Cxqy7d5DXc52ZgHvkHBeZVsqW.jpg",
@@ -44,6 +50,7 @@
       "tagColor": "msx-blue"
     },
     {
+      "uid": "5",
       "title": "Capitana Marvel",
       "playerLabel": "Capitana Marvel",
       "image": "https://image.tmdb.org/t/p/w185_and_h278_bestv2/d3p5JuwN7dG0TvrN5h4ZY4tMOEX.jpg",
@@ -52,6 +59,7 @@
       "tagColor": "msx-blue"
     },
     {
+      "uid": "6",
       "title": "John Wick 3: Parabellum",
       "playerLabel": "John Wick 3: Parabellum",
       "image": "https://image.tmdb.org/t/p/w185_and_h278_bestv2/38d32uG1x7iiN2jdK0cRX0Bk423.jpg",
