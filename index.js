@@ -1,23 +1,71 @@
-var http = require("http");
-var finalhandler = require("finalhandler");
-var serveStatic = require("serve-static");
+const express = require("express");
+const app = express();
+var cors = require("cors");
+const fs = require("fs");
 
-var serve = serveStatic("./");
+const port = process.env.PORT || 8080;
 
-// set the port of our application
-// process.env.PORT lets the port be set by Heroku
-var port = process.env.PORT || 8080;
+app.use(express.json());
+app.use(cors());
+app.use("/msx", express.static("msx"));
 
-const server = http.createServer((req, res) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Headers", "Origin, Content-Type, Accept");
-  res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
-  // res.write("Is working!"); //write a response to the client
-  // res.end(); //end the response
-  var done = finalhandler(req, res);
-  serve(req, res, done);
+app.get("/", (req, res) => {
+  res.send("is working!");
 });
 
-server.listen(port, function() {
+app.get("/videos", (req, res) => {
+  let rawdata = fs.readFileSync("msx/videos.json");
+  let data = JSON.parse(rawdata);
+  console.log(data.items);
+  res.status(200).json(data.items);
+});
+
+app.get("/youtube", (req, res) => {
+  let rawdata = fs.readFileSync("msx/youtube.json");
+  let data = JSON.parse(rawdata);
+  console.log(data.items);
+  res.status(200).json(data.items);
+});
+
+app.post("/videos", async (req, res, next) => {
+  try {
+    const item = req.body;
+
+    let rawdata = await fs.readFileSync("msx/videos-clone.json");
+    let data = await JSON.parse(rawdata);
+
+    const isUpdate = data.items.some(i => i.uid === item.uid);
+
+    let n;
+
+    if (isUpdate) {
+      n = {
+        ...data,
+        items: data.items.map(i => {
+          if (i.uid === item.uid) {
+            return item;
+          }
+          return i;
+        })
+      };
+    } else {
+      n = {
+        ...data,
+        items: [...data.items, item]
+      };
+    }
+
+    let newData = JSON.stringify(n, undefined, 2);
+    fs.writeFileSync("msx/videos-clone.json", newData);
+
+    res.status(200).send("JSON updated!");
+  } catch (e) {
+    //this will eventually be handled by your error handling middleware
+    next(e);
+  }
+});
+
+
+app.listen(port, function() {
   console.log("Our app is running on http://localhost:" + port);
 });
